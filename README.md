@@ -16,7 +16,9 @@ Test Scenarios:
 
 7.     Verify that we get response status code as 404, when wrong URL is set –N
 
-8.     Verify that we get the response status code as 200, when parameter value for ‘q’ is set to any field member and the JSON response gets filtered accordingly
+8.     Verify from the response that value of any object from field member is as expected.
+
+9.     Verify that we get the response status code as 200, when parameter value for ‘q’ is set to any field member and the JSON response gets filtered accordingly
 
  
  
@@ -27,3 +29,7 @@ Bug: When parameter ‘q’ value is set to any field member, the JSON response 
 Expectation: The JSON response should get filtered according to the text value in the ‘q’ parameter
  
 Resolution: This issue should be fixed so that the user can filter the response according to the text value in the query parameter
+
+
+NOTE:
+If the 'q' parameter was working, more test scenarios would have been added based on the values that we pass to this parameter. 
